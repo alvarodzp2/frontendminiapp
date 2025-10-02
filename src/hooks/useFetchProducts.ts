@@ -8,7 +8,7 @@ interface UseFetchProductsProps {
   pageSize?: number; 
 }
 
-export const useFetchProducts = ({ pageSize = 5}: UseFetchProductsProps = {}) => {
+export const useFetchProducts = ({ pageSize = 4}: UseFetchProductsProps = {}) => {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
