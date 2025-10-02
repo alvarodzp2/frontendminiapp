@@ -7,7 +7,7 @@ import { useTheme } from "../context/ThemeContext";
 import "../styles/Home.css"; 
 
 function Home() {
-  const { products, loading, error, page, totalPages, setPage } = useFetchProducts({ pageSize: 4 });
+  const { products, loading, error, page, totalPages, setPage } = useFetchProducts({ pageSize: 5 });
 
   const { theme } = useTheme();
 
